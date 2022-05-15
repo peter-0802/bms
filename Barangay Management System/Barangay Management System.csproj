@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7B96F1F-EF41-4410-AEEF-3DBC37462760}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Barangay_Management_System</RootNamespace>
+    <AssemblyName>Barangay Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Barangay_Management_System.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1E8B53A96089F4CADF03F8610945D6F199A94DCB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Barangay Management System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Aha-Soft-Large-Home-Goverment.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedDataGridView">
+      <HintPath>packages\ADGV.0.1.0.10\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.12.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.1\lib\net40\Guna.UI2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Trades\Trades\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="repfilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repfilter.Designer.cs">
+      <DependentUpon>repfilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="brgy_cert.cs">
+      <DependentUpon>brgy_cert.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="cert_res.cs">
+      <DependentUpon>cert_res.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crt_residency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crt_residency.Designer.cs">
+      <DependentUpon>crt_residency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crt_indigency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crt_indigency.Designer.cs">
+      <DependentUpon>crt_indigency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="id_generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="id_generator.Designer.cs">
+      <DependentUpon>id_generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enter_idno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enter_idno.Designer.cs">
+      <DependentUpon>enter_idno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cert_ind.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cert_ind.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="kp_form_22.cs">
+      <DependentUpon>kp_form_22.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_21.cs">
+      <DependentUpon>kp_form_21.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_25.cs">
+      <DependentUpon>kp_form_25.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_24.cs">
+      <DependentUpon>kp_form_24.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_23.cs">
+      <DependentUpon>kp_form_23.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_20b.cs">
+      <DependentUpon>kp_form_20b.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_20a.cs">
+      <DependentUpon>kp_form_20a.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_20.cs">
+      <DependentUpon>kp_form_20.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_19.cs">
+      <DependentUpon>kp_form_19.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_18.cs">
+      <DependentUpon>kp_form_18.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_17.cs">
+      <DependentUpon>kp_form_17.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_16.cs">
+      <DependentUpon>kp_form_16.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_15.cs">
+      <DependentUpon>kp_form_15.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_14.cs">
+      <DependentUpon>kp_form_14.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_13.cs">
+      <DependentUpon>kp_form_13.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_12.cs">
+      <DependentUpon>kp_form_12.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_11.cs">
+      <DependentUpon>kp_form_11.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_10.cs">
+      <DependentUpon>kp_form_10.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_9.cs">
+      <DependentUpon>kp_form_9.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_8.cs">
+      <DependentUpon>kp_form_8.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_7.cs">
+      <DependentUpon>kp_form_7.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_6a.cs">
+      <DependentUpon>kp_form_6a.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_5.cs">
+      <DependentUpon>kp_form_5.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_4.cs">
+      <DependentUpon>kp_form_4.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_3.cs">
+      <DependentUpon>kp_form_3.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_2.cs">
+      <DependentUpon>kp_form_2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="kp_form_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kp_form_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="kp_generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kp_generator.Designer.cs">
+      <DependentUpon>kp_generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dev_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dev_login.Designer.cs">
+      <DependentUpon>dev_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query.Designer.cs">
+      <DependentUpon>Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="brgy_certification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="brgy_certification.Designer.cs">
+      <DependentUpon>brgy_certification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_new.Designer.cs">
+      <DependentUpon>report_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_summary_new.cs">
+      <DependentUpon>rpt_summary_new.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddResident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddResident.Designer.cs">
+      <DependentUpon>AddResident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet.cs">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="families.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="families.Designer.cs">
+      <DependentUpon>families.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_family.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_family.Designer.cs">
+      <DependentUpon>add_family.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBConn.cs" />
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fam_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fam_report.Designer.cs">
+      <DependentUpon>fam_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="id_card.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>id_card.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_fam_report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_fam_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_summary.cs">
+      <DependentUpon>rpt_summary.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="rpt_residents.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_residents.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tester.Designer.cs">
+      <DependentUpon>tester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testtt.Designer.cs">
+      <DependentUpon>testtt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="win_id_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="win_id_report.Designer.cs">
+      <DependentUpon>win_id_report.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="repfilter.resx">
+      <DependentUpon>repfilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="brgy_cert.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>brgy_cert.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cert_res.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cert_res.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crt_residency.resx">
+      <DependentUpon>crt_residency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crt_indigency.resx">
+      <DependentUpon>crt_indigency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="id_generator.resx">
+      <DependentUpon>id_generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enter_idno.resx">
+      <DependentUpon>enter_idno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cert_ind.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cert_ind.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_22.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_22.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_21.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_25.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_25.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_24.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_24.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_23.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_23.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_20b.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_20b.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_20a.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_20a.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_20.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_20.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_19.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_19.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_18.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_18.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_17.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_17.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_16.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_16.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_15.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_15.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_14.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_13.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_13.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_9.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_6a.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_6a.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_form_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>kp_form_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kp_generator.resx">
+      <DependentUpon>kp_generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dev_login.resx">
+      <DependentUpon>dev_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query.resx">
+      <DependentUpon>Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="brgy_certification.resx">
+      <DependentUpon>brgy_certification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_new.resx">
+      <DependentUpon>report_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_summary_new.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_summary_new.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddResident.resx">
+      <DependentUpon>AddResident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="families.resx">
+      <DependentUpon>families.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_family.resx">
+      <DependentUpon>add_family.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fam_report.resx">
+      <DependentUpon>fam_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="id_card.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>id_card.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_fam_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_fam_report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_summary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_summary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_residents.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_residents.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tester.resx">
+      <DependentUpon>tester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testtt.resx">
+      <DependentUpon>testtt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="win_id_report.resx">
+      <DependentUpon>win_id_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Barangay Management System_TemporaryKey.pfx" />
+    <None Include="DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitoshi-namura-MyiYvI-EKis-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-min.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\215067775_2991629604449900_6307280939636060415_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Barangay Management System.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aha-Soft-Large-Home-Goverment.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
