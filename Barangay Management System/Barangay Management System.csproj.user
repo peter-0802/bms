@@ -5,7 +5,7 @@
     <PublishUrlHistory>publish\</PublishUrlHistory>
     <InstallUrlHistory>https://raw.githubusercontent.com/peter-0802/bms/main/published/</InstallUrlHistory>
     <SupportUrlHistory />
-    <UpdateUrlHistory />
+    <UpdateUrlHistory>https://raw.githubusercontent.com/peter-0802/bms/main/published/</UpdateUrlHistory>
     <BootstrapperUrlHistory />
     <ErrorReportUrlHistory />
     <FallbackCulture>en-US</FallbackCulture>

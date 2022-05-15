@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Barangay Management System.exe" version="1.3.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Barangay Management System.exe" version="1.3.0.10" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Aha-Soft-Large-Home-Goverment.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sg7ZOKqiO26h5Cew5uB2IiEu9MG4d/y+SO++Bp9XT20=</dsig:DigestValue>
+        <dsig:DigestValue>y2Lim9PXRov/cAFqdRMT/u6W2TFL1bCNkwFn81uLWtM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -390,7 +390,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>snP3j7/JAzZ6BHhA0kFbLJcJNau44wd5BWuPu2gxMZo=</dsig:DigestValue>
+      <dsig:DigestValue>EvllKYI+0TV3IqaRdTS39dF/2J2G9mf/xzIA7nzDBsY=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
