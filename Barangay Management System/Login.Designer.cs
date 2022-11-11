@@ -121,7 +121,7 @@ namespace Barangay_Management_System
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(193, 232);
+            this.label1.Location = new System.Drawing.Point(29, 232);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 22);
             this.label1.TabIndex = 11;

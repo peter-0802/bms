@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Management System.exe" size="39613952">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Management System.exe" size="39598592">
       <assemblyIdentity name="Barangay Management System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>y2Lim9PXRov/cAFqdRMT/u6W2TFL1bCNkwFn81uLWtM=</dsig:DigestValue>
+        <dsig:DigestValue>64tBrkZ/PPE1REypuHUNTbcc7lHGlL2Fv1/sBAff4so=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -384,13 +384,13 @@
       <dsig:DigestValue>yTdwMGlPYMD1XGUtpoZvLn69VKt3U7+ys4jsSObIZ0I=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Barangay Management System.pdb" size="640512">
+  <file name="Barangay Management System.pdb" size="638464">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>EvllKYI+0TV3IqaRdTS39dF/2J2G9mf/xzIA7nzDBsY=</dsig:DigestValue>
+      <dsig:DigestValue>jDHSLUt1yn+WJ+BdNomAyubBmR2pw7YGkOnxXZXNS7k=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

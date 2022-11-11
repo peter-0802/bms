@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Barangay Management System.exe" version="1.3.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Barangay Management System.exe" version="1.3.0.10" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Aha-Soft-Large-Home-Goverment.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Management System.exe" size="39614464">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Barangay Management System.exe" size="39598592">
       <assemblyIdentity name="Barangay Management System" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nhpA/x0T6XBoIRg2VcUBcnuTWlcN6owsdgO7PQYuNEs=</dsig:DigestValue>
+        <dsig:DigestValue>64tBrkZ/PPE1REypuHUNTbcc7lHGlL2Fv1/sBAff4so=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -390,7 +390,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>fNOLGFhdC/NP679gJ++3sSb7JzK3Dz7B6Cf46vpkuQM=</dsig:DigestValue>
+      <dsig:DigestValue>jDHSLUt1yn+WJ+BdNomAyubBmR2pw7YGkOnxXZXNS7k=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
